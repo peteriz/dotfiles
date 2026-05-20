@@ -2,22 +2,22 @@
 	name = Peter Izsak
 	email = peteriz@gmail.com
 [core]
-	excludesfile = /Users/pizsak/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 
 [https]
-        # proxy = https://
+	# proxy = https://
 [http]
-        # proxy = http://
+	# proxy = http://
 [url "https://github.com/"]
-        insteadOf = git://github.com/
+	insteadOf = git://github.com/
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [commit]
-	template = /Users/pizsak/.stCommitMsg
+	template = ~/.stCommitMsg
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f

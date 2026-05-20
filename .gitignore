@@ -1,0 +1,25 @@
+.zcompdump*
+.zsh_history
+*.log
+.cache/
+.local/share/
+.local/state/
+
+# GitHub CLI auth is stored outside the tracked non-secret config.
+.config/gh/hosts.yml
+
+# Atuin state can include shell history, keys, sessions, and sync data.
+.config/atuin/*.db
+.config/atuin/key
+.config/atuin/session
+
+# Codex/Copilot/agent runtime state should not be versioned.
+.codex/auth.json
+.codex/cache/
+.codex/logs/
+.codex/memories/
+.codex/sessions/
+.codex/*.sqlite
+.agents/**/cache/
+.agents/**/logs/
+.agents/.skill-lock.json
